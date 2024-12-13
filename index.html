@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Need to know</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--------------------------------- Header------------------------------------>
+    <header class="header">
+        <nav class="header__navbar">
+            <h1 class="header__logo">GA</h1>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Home</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <section class="header__heading">
+            <!-- Left Content Section -->
+            <div class="header__content">
+                <h1 class="header__title">Welcome to my first landing page</h1>
+                <p class="header__desc">
+                    You'll see the most used HTML tags & CSS properties used almost in any website <br>
+                    of course, this is according to what I've learned and seen during my learning path.
+                </p>
+                <a class="header__btn" href="#explore">Explore</a>
+            </div>
+
+            <!-- Right Image Section -->
+            <figure class="header__image-container">
+                <svg class="header__svg" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-49.15 -49.15 589.82 589.82" xml:space="preserve" width="300px" height="300px" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="12.77952"> <g> <g> <path d="M491.52,399.36V20.48H0v378.88h153.6v51.2h-40.96v20.48h266.24v-20.48h-40.96v-51.2H491.52z M20.48,40.96h450.56v276.48 H20.48V40.96z M317.44,450.56H174.08v-51.2h143.36V450.56z M20.48,378.88v-40.96h450.56v40.96H20.48z"></path> </g> </g> <g> <g> <rect x="307.2" y="61.44" width="133.12" height="20.48"></rect> </g> </g> <g> <g> <rect x="235.52" y="61.44" width="51.2" height="20.48"></rect> </g> </g> <g> <g> <rect x="194.56" y="61.44" width="20.48" height="20.48"></rect> </g> </g> <g> <g> <rect x="153.6" y="61.44" width="20.48" height="20.48"></rect> </g> </g> <g> <g> <rect x="317.44" y="215.04" width="122.88" height="20.48"></rect> </g> </g> <g> <g> <rect x="276.48" y="215.04" width="20.48" height="20.48"></rect> </g> </g> <g> <g> <rect x="235.52" y="215.04" width="20.48" height="20.48"></rect> </g> </g> <g> <g> <rect x="337.92" y="163.84" width="102.4" height="20.48"></rect> </g> </g> <g> <g> <rect x="194.56" y="163.84" width="122.88" height="20.48"></rect> </g> </g> <g> <g> <rect x="225.28" y="112.64" width="40.96" height="20.48"></rect> </g> </g> <g> <g> <rect x="286.72" y="112.64" width="153.6" height="20.48"></rect> </g> </g> <g> <g> <rect x="51.2" y="112.64" width="153.6" height="20.48"></rect> </g> </g> <g> <g> <rect x="245.76" y="266.24" width="194.56" height="20.48"></rect> </g> </g> <g> <g> <polygon points="176.2,202.68 161.72,217.16 190.32,245.76 161.72,274.36 176.2,288.84 219.28,245.76 "></polygon> </g> </g> <g> <g> <polygon points="94.28,217.16 79.8,202.68 36.72,245.76 79.8,288.84 94.28,274.36 65.68,245.76 "></polygon> </g> </g> <g> <g> <rect x="72.86" y="235.538" transform="matrix(0.3711 -0.9286 0.9286 0.3711 -147.7282 273.431)" width="110.281" height="20.48"></rect> </g> </g> </g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M491.52,399.36V20.48H0v378.88h153.6v51.2h-40.96v20.48h266.24v-20.48h-40.96v-51.2H491.52z M20.48,40.96h450.56v276.48 H20.48V40.96z M317.44,450.56H174.08v-51.2h143.36V450.56z M20.48,378.88v-40.96h450.56v40.96H20.48z"></path> </g> </g> <g> <g> <rect x="307.2" y="61.44" width="133.12" height="20.48"></rect> </g> </g> <g> <g> <rect x="235.52" y="61.44" width="51.2" height="20.48"></rect> </g> </g> <g> <g> <rect x="194.56" y="61.44" width="20.48" height="20.48"></rect> </g> </g> <g> <g> <rect x="153.6" y="61.44" width="20.48" height="20.48"></rect> </g> </g> <g> <g> <rect x="317.44" y="215.04" width="122.88" height="20.48"></rect> </g> </g> <g> <g> <rect x="276.48" y="215.04" width="20.48" height="20.48"></rect> </g> </g> <g> <g> <rect x="235.52" y="215.04" width="20.48" height="20.48"></rect> </g> </g> <g> <g> <rect x="337.92" y="163.84" width="102.4" height="20.48"></rect> </g> </g> <g> <g> <rect x="194.56" y="163.84" width="122.88" height="20.48"></rect> </g> </g> <g> <g> <rect x="225.28" y="112.64" width="40.96" height="20.48"></rect> </g> </g> <g> <g> <rect x="286.72" y="112.64" width="153.6" height="20.48"></rect> </g> </g> <g> <g> <rect x="51.2" y="112.64" width="153.6" height="20.48"></rect> </g> </g> <g> <g> <rect x="245.76" y="266.24" width="194.56" height="20.48"></rect> </g> </g> <g> <g> <polygon points="176.2,202.68 161.72,217.16 190.32,245.76 161.72,274.36 176.2,288.84 219.28,245.76 "></polygon> </g> </g> <g> <g> <polygon points="94.28,217.16 79.8,202.68 36.72,245.76 79.8,288.84 94.28,274.36 65.68,245.76 "></polygon> </g> </g> <g> <g> <rect x="72.86" y="235.538" transform="matrix(0.3711 -0.9286 0.9286 0.3711 -147.7282 273.431)" width="110.281" height="20.48"></rect> </g> </g> </g></svg>
+            </figure>
+        </section>
+    </header>
+
+    <!--------------------X-------------- Header-------------X---------------------->
+    <main>
+        <!------------------------- About Section ---------------------------------->
+        <section class="about" id="about">
+            <figure class="about__image">
+                <img src="./assets/christin-hume-S8yYIGULP64-unsplash.jpg" alt="Journey">
+            </figure>
+            <div class="about__content">
+                <h2 class="about__title">My Web Development Journey</h2>
+                <p class="about__desc">My story with web development started when I was 15 years old Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Quos quas atque voluptatum, culpa perspiciatis sint magnam
+                    fugit vero aut pariatur iusto repellendus accusantium quo adipisci architecto quidem dolores eos
+                    nam, quia molestiae fugiat commodi quod suscipit dignissimos! Nisi, ut. Cum distinctio cupiditate,
+                    adipisci voluptate nobis necessitatibus asperiores unde incidunt maxime consectetur ipsam,
+                    perferendis, odit voluptates magni sequi delectus officiis harum provident itaque! Accusantium nemo
+                    quia cum possimus non obcaecati totam dolores impedit delectus, consequatur rerum quis quisquam sed
+                    ad consectetur commodi illum blanditiis dignissimos maxime libero? Vero minima pariatur perferendis
+                    laborum quidem, quod, dignissimos fugiat deserunt neque consequuntur voluptatibus blanditiis?</p>
+            </div>
+        </section>
+
+
+        <!------------------------------- HTML Section ------------------------------>
+        <section class="section" id="explore">
+            <h2 class="section__title">Common HTML Tags</h2>
+            <p class="section__desc">HTML is a markup language used to create web pages, and is the standard for the content of web pages. Below is a list of some common HTML tags you should know other than the basic tags like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>. Knowing these tags is very important for web development as they are building blocks of big web pages. Of course, you can find more tags on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">MDN Web Docs</a>.</p>
+            
+            <!---------------------------- Cards Wrapper -------------------------->
+        
+            <div class="html__cards-wrapper">
+        
+                <!------------------------ Details & Summary Tag Card ---------------------------->
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">&lt;Details & Summary&gt; Tag</h3>
+                        <p class="tag__desc">Used to create collapsible sections</p>
+                    </header>
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+            &lt;details&gt;
+                &lt;summary&gt;Click Here&lt;/summary&gt;
+                    &lt;h1&gt;Main Heading&lt;/h1&gt;
+                    &lt;p&gt;Details&lt;/p&gt;
+            &lt;/details&gt;
+                        </code></pre>
+                    </div>
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <pre><code>
+            <details>
+                <summary>Click Here</summary>
+                <h1>Main Heading</h1>
+                <p>Details</p>
+            </details>
+                        </code></pre>
+                    </div>
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">Read More</a>
+                    </footer>
+                </div>
+        
+                <!------------------------ Text Area Tag Card ---------------------------->
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">&lt;Textarea&gt; Tag</h3>
+                        <p class="tag__desc">Used to create a text area</p>
+                    </header>
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+            &lt;textarea placeholder="Enter text here"&gt;
+                &lt;/textarea&gt;
+                        </code></pre>
+                    </div>
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <pre><code>
+            <textarea placeholder="Enter text here"></textarea>
+                        </code></pre>
+                    </div>
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">Read More</a>
+                    </footer>
+                </div>
+        
+                <!------------------------ Select Tag Card ---------------------------->
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">&lt;Select&gt; Tag</h3>
+                        <p class="tag__desc">Used to create a dropdown menu</p>
+                    </header>
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+            &lt;select&gt;
+                &lt;option&gt;Option 1&lt;/option&gt;
+                &lt;option&gt;Option 2&lt;/option&gt;
+            &lt;/select&gt;
+                        </code></pre>
+                    </div>
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <pre><code>
+            <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </select>
+                        </code></pre>
+                    </div>
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank">Read More</a>
+                    </footer>
+                </div>
+        
+                <!------------------------ Kbd Tag Card ---------------------------->
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">&lt;Kbd&gt; Tag</h3>
+                        <p class="tag__desc">Used to create keyboard input</p>
+                    </header>
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+            <p>Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; and &lt;kbd&gt;C&lt;/kbd&gt; to copy</p>
+                        </code></pre>
+                    </div>
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <pre><code>
+            <p>Press <kbd>Ctrl</kbd> and <kbd>C</kbd> to copy</p>
+                        </code></pre>
+                    </div>
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank">Read More</a>
+                    </footer>
+                </div>
+        
+                <!------------------------ Optgroup Tag Card ---------------------------->
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">&lt;Optgroup&gt; Tag</h3>
+                        <p class="tag__desc">Used to create a group of options</p>
+                    </header>
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+            &lt;select&gt;
+                &lt;optgroup label="Group 1"&gt;
+                    &lt;option&gt;Option 1&lt;/option&gt;
+                    &lt;option&gt;Option 2&lt;/option&gt;
+                &lt;/optgroup&gt;
+                &lt;optgroup label="Group 2"&gt;
+                    &lt;option&gt;Option 3&lt;/option&gt;
+                    &lt;option&gt;Option 4&lt;/option&gt;
+                &lt;/optgroup&gt;
+            &lt;/select&gt;
+                        </code></pre>
+                    </div>
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <pre><code>
+            <select>
+                <optgroup label="Group 1">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </optgroup>
+            </select>
+                        </code></pre>
+                    </div>
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup" target="_blank">Read More</a>
+                    </footer>
+                </div>
+        
+                <!------------------------ iframe Tag Card ---------------------------->
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">&lt;Iframe&gt; Tag</h3>
+                        <p class="tag__desc">Used to embed an iframe</p>
+                    </header>
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+            &lt;iframe src="https://www.w3schools.com/"&gt;&lt;/iframe&gt;
+                        </code></pre>
+                    </div>
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <pre><code>
+            <iframe src="https://www.w3schools.com/"></iframe>
+                        </code></pre>
+                    </div>
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">Read More</a>
+                    </footer>
+                </div>
+        
+            </div>
+        </section>
+        
+        <!------------------------ CSS section ------------------------>
+        <section class="section">
+            <h2 class="section__title">CSS Techniques</h2>
+            <p class="section__desc">CSS is easy when you look at it at the beginning, however, it can be very challenging when you go into a complex project. therefore, it is important to have a good understanding of CSS Techniques not just the basic properties but also how to use them, below is a list of some CSS Techniques you should know very well.</p>
+        
+            <div class="css__cards-wrapper">
+                <!------------------------ Card ---------------------------->
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">Flexbox Layout</h3>
+                        <p class="tag__desc">Using flexbox to create a flexible layout</p>
+                    </header>
+                    
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+                &lt;div style="display: flex;"&gt;
+                    &lt;div style="flex: 1; height: 100px; background-color: red;"&gt;&lt;/div&gt;
+                    &lt;div style="flex: 1; height: 100px; background-color: green;"&gt;&lt;/div&gt;
+                    &lt;div style="flex: 1; height: 100px; background-color: blue;"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                        </code></pre>
+                    </div>
+                    
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <div style="display: flex;">
+                            <div style="flex: 1; height: 100px; background-color: red;"></div>
+                            <div style="flex: 1; height: 100px; background-color: green;"></div>
+                            <div style="flex: 1; height: 100px; background-color: blue;"></div>
+                        </div>
+                    </div>
+                    
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout_Module" target="_blank">Read More</a>
+                    </footer>
+                </div>
+                
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">Grid Layout</h3>
+                        <p class="tag__desc">Using grid layout to create a flexible layout</p>
+                    </header>
+                    
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+                &lt;div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 100px 100px;"&gt;
+                    &lt;div style="background-color: yellow;"&gt;&lt;/div&gt;
+                    &lt;div style="background-color: purple;"&gt;&lt;/div&gt;
+                    &lt;div style="background-color: orange;"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                        </code></pre>
+                    </div>
+                    
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 100px;">
+                            <div style="background-color: yellow;"></div>
+                            <div style="background-color: purple;"></div>
+                            <div style="background-color: orange;"></div>
+                        </div>
+                    </div>
+                    
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">Read More</a>
+                    </footer>
+                </div>
+                
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">CSS Gradients</h3>
+                        <p class="tag__desc">Creating beautiful gradients with CSS</p>
+                    </header>
+                    
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+                &lt;div style="width: 200px; height: 100px; background: linear-gradient(to right, red, yellow);"&gt;&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                    
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <div style="width: 200px; height: 100px; background: linear-gradient(to right, red, yellow);"></div>
+                    </div>
+                    
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Gradients" target="_blank">Read More</a>
+                    </footer>
+                </div>
+                
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">CSS Shapes & Clip Paths</h3>
+                        <p class="tag__desc">Creating shapes and clipping paths with CSS</p>
+                    </header>
+                    
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+                &lt;div style="width: 50px; height: 50px; background-color: green; clip-path: circle(50%);"&gt;&lt;/div&gt;
+                &lt;div style="width: 50px; height: 50px; background-color: blue; clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"&gt;&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                    
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <div style="width: 50px; height: 50px; background-color: green; clip-path: circle(50%);"></div>
+                        <div style="width: 50px; height: 50px; background-color: blue; clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
+                    </div>
+                    
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path" target="_blank">Read More</a>
+                    </footer>
+                </div>
+                
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">CSS Animations</h3>
+                        <p class="tag__desc">Animating elements with CSS</p>
+                    </header>
+                    
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+                &lt;div style="width: 100px; height: 100px; background-color: red; animation: slide 3s infinite;"&gt;&lt;/div&gt;
+                            
+                &lt;style&gt;
+                @keyframes slide {
+                    0% { transform: translateX(0); }
+                    50% { transform: translateX(200px); }
+                    100% { transform: translateX(0); }
+                }
+                &lt;/style&gt;
+                        </code></pre>
+                    </div>
+                    
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <div style="width: 100px; height: 100px; background-color: red; animation: slide 3s infinite;"></div>
+                        <style>
+                        @keyframes slide {
+                            0% { transform: translateX(0); }
+                            50% { transform: translateX(200px); }
+                            100% { transform: translateX(0); }
+                        }
+                        </style>
+                    </div>
+                    
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="_blank">Read More</a>
+                    </footer>
+                </div>
+                
+                <div class="card">
+                    <header class="card__header">
+                        <h3 class="tag__title">CSS Hover Effect</h3>
+                        <p class="tag__desc">Adding hover effects to elements with CSS</p>
+                    </header>
+                    
+                    <div class="card__code-demo">
+                        <p>Demo:</p>
+                        <pre><code>
+                &lt;div style="width: 200px; height: 100px; background-color: lightblue; transition: background-color 0.3s;" 
+                    onmouseover="this.style.backgroundColor='lightgreen'" 
+                    onmouseout="this.style.backgroundColor='lightblue'"&gt;
+                    Hover me
+                &lt;/div&gt;
+                        </code></pre>
+                    </div>
+                    
+                    <div class="card__code-result">
+                        <p>Rendered Result:</p>
+                        <div style="width: 200px; height: 100px; background-color: lightblue; transition: background-color 0.3s;" 
+                            onmouseover="this.style.backgroundColor='lightgreen'" 
+                            onmouseout="this.style.backgroundColor='lightblue'">
+                            Hover me
+                        </div>
+                    </div>
+                    
+                    <footer class="card__footer">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" target="_blank">Read More</a>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 HTML and CSS Tags. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
